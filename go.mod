@@ -1,0 +1,43 @@
+module github.com/matthiasng/dns-provider-api
+
+go 1.14
+
+require (
+	cloud.google.com/go v0.56.0
+	github.com/Azure/azure-sdk-for-go v42.0.0+incompatible
+	github.com/Azure/go-autorest/autorest v0.10.0
+	github.com/Azure/go-autorest/autorest/azure/auth v0.4.2
+	github.com/Azure/go-autorest/autorest/to v0.3.0
+	github.com/OpenDNS/vegadns2client v0.0.0-20180418235048-a3fa4a771d87
+	github.com/akamai/AkamaiOPEN-edgegrid-golang v0.9.13
+	github.com/aliyun/alibaba-cloud-sdk-go v1.61.170
+	github.com/aws/aws-sdk-go v1.30.19
+	github.com/cenkalti/backoff/v4 v4.0.2
+	github.com/cloudflare/cloudflare-go v0.11.7
+	github.com/cpu/goacmedns v0.0.2
+	github.com/dnsimple/dnsimple-go v0.60.0
+	github.com/exoscale/egoscale v1.19.0
+	github.com/go-acme/lego/v3 v3.6.0
+	github.com/google/go-querystring v1.0.0
+	github.com/gophercloud/gophercloud v0.10.0
+	github.com/iij/doapi v0.0.0-20190504054126-0bbf12d6d7df
+	github.com/labbsr0x/bindman-dns-webhook v1.0.2
+	github.com/linode/linodego v0.15.0
+	github.com/liquidweb/liquidweb-go v1.6.1
+	github.com/miekg/dns v1.1.29
+	github.com/namedotcom/go v0.0.0-20180403034216-08470befbe04
+	github.com/nrdcg/auroradns v1.0.1
+	github.com/nrdcg/dnspod-go v0.4.0
+	github.com/nrdcg/goinwx v0.6.1
+	github.com/nrdcg/namesilo v0.2.1
+	github.com/oracle/oci-go-sdk v19.0.0+incompatible
+	github.com/ovh/go-ovh v0.0.0-20181109152953-ba5adb4cf014
+	github.com/sacloud/libsacloud v1.36.1
+	github.com/timewasted/linode v0.0.0-20160829202747-37e84520dcf7
+	github.com/transip/gotransip/v6 v6.0.4
+	github.com/vultr/govultr v0.4.0
+	golang.org/x/net v0.0.0-20200501053045-e0ff5e5a1de5
+	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
+	google.golang.org/api v0.22.0
+	gopkg.in/ns1/ns1-go.v2 v2.3.0
+)
