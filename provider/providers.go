@@ -81,22 +81,22 @@ type Provider interface {
 	CleanUp(domain, token, fqdn, value string) error
 }
 
-func NewProvider(name string, vars map[string]string) (Provider, error) {
+func New(name string, vars map[string]string) (Provider, error) {
 	for key, value := range vars {
 		os.Setenv(key, value)
 	}
 
-	defer func(){
+	defer func() {
 		for key := range vars {
 			os.Unsetenv(key)
 		}
 	}()
 
-	return NewDNSChallengeProviderByName(name)
+	return NewByName(name)
 }
 
-// NewDNSChallengeProviderByName Factory for DNS providers
-func NewDNSChallengeProviderByName(name string) (Provider, error) {
+// NewByName Factory for DNS providers
+func NewByName(name string) (Provider, error) {
 	switch name {
 	case "acme-dns":
 		return acmedns.NewDNSProvider()
